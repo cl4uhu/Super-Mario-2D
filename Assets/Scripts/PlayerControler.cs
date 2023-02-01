@@ -25,7 +25,7 @@ public class PlayerControler : MonoBehaviour
         anim = GetComponent<Animator>();
         
         playerHealth= 10;
-        Debug.Log("texto");   
+        Debug.Log("Hello World");   
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class PlayerControler : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
 
-        transform.position += new Vector3 (horizontal, 0, 0) * playerSpeed * Time.deltaTime; 
+        //transform.position += new Vector3 (horizontal, 0, 0) * playerSpeed * Time.deltaTime; 
 
         if(horizontal < 0)
         {
@@ -55,5 +55,10 @@ public class PlayerControler : MonoBehaviour
             rBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetBool("IsJumping", true);
         }
+    }
+
+    void FixedUpdate()
+    {
+        rBody.velocity = new Vector2(horizontal * playerSpeed, rBody.velocity.y);
     }
 }
