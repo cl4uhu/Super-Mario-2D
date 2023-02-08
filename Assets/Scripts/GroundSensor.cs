@@ -16,13 +16,16 @@ void OnTriggerEnter2D(Collider2D other)
 {
     if(other.gameObject.layer == 3)
     {
-    isGrounded = true; 
-    controller.anim.SetBool ("IsJumping", false);
+        isGrounded = true; 
+        controller.anim.SetBool("IsJumping", false);
     }
     else if(other.gameObject.layer == 6)
     {
         Debug.Log("Goomba muerto");
-        Destroy(other.gameObject);
+        
+        Enemy goomba = other.gameObject.GetComponent<Enemy>();
+        goomba.Die(); 
+
     } 
 
 
