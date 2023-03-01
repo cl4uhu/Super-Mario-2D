@@ -15,14 +15,17 @@ public class PlayerControler : MonoBehaviour
     private GroundSensor sensor; 
     public Animator anim;
     float horizontal; 
+    CoinManager coinManager;
+    BanderaManager banderaManager;
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer= GetComponent<SpriteRenderer>();
         rBody = GetComponent<Rigidbody2D>();
-        sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
         anim = GetComponent<Animator>();
+        sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
+        coinManager = GameObject.Find("CoinManager").GetComponent<CoinManager>();
         
         playerHealth= 10;
         Debug.Log("Hello World");   
@@ -60,5 +63,20 @@ public class PlayerControler : MonoBehaviour
     void FixedUpdate()
     {
         rBody.velocity = new Vector2(horizontal * playerSpeed, rBody.velocity.y);
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "CoinCollision") 
+        {
+            CoinManager coinManager = collision.gameObject.GetComponent<CoinManager>();
+            coinManager.DestruccionMoneda();
+        }
+
+        if (collision.gameObject.tag == "BanderaCollision") 
+        {
+            BanderaManager banderaManager = collision.gameObject.GetComponent<BanderaManager>();
+            banderaManager.BanderaTocada();
+        }
     }
 }
