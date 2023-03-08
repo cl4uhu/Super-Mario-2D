@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControler : MonoBehaviour
 {
     int playerHealth = 3;
     float playerSpeed = 5.5f;
     public float jumpForce = 10f;
-
     string texto = "Hello World";
-
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rBody;
     private GroundSensor sensor; 
     public Animator anim;
+    public Text coinText;
+    int contMonedas;
     float horizontal; 
     CoinManager coinManager;
     BanderaManager banderaManager;
@@ -26,7 +27,7 @@ public class PlayerControler : MonoBehaviour
         anim = GetComponent<Animator>();
         sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
         coinManager = GameObject.Find("CoinManager").GetComponent<CoinManager>();
-        
+        contMonedas= 0;
         playerHealth= 10;
         Debug.Log("Hello World");   
     }
@@ -71,6 +72,7 @@ public class PlayerControler : MonoBehaviour
         {
             CoinManager coinManager = collision.gameObject.GetComponent<CoinManager>();
             coinManager.DestruccionMoneda();
+            coinText.text= "coin" + contMonedas;
         }
 
         if (collision.gameObject.tag == "BanderaCollision") 

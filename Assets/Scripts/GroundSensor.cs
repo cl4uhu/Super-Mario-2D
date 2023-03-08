@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GroundSensor : MonoBehaviour
 {
@@ -39,9 +40,9 @@ void OnTriggerEnter2D(Collider2D other)
     if(other.gameObject.tag == "DeadZone") 
     {
         Debug.Log("Estoy Muerto");
-
         soundManager.StopBGM();
         sfxManager.MarioDeath();
+        SceneManager.LoadScene(2);
     } 
 }
 
