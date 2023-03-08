@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1108
     y: 0
-    width: 390
+    width: 391
     height: 512
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\3d\Segundo Trimestre\GitHub
+  m_LastProjectPath: E:\3d\Super-Mario-2D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -415,7 +415,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000008770000
+    m_ExpandedIDs: 00000000a8600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -507,18 +507,18 @@ MonoBehaviour:
       m_ExpandedIDs: c6a5ffff36a6ffffb8a6ffff5aa7ffffa0a7ffffe6a7ffff2ca8ffffcca8ffff12a9ffff26abffff68abffff0aadffff4cadffff8eadffffd4adffff36caffffaaf3ffffbaf3ffff46f7ffffa6f7fffff0f7ffffcaf8ffff90f9ffff2cfbffff1c890000e6a60000eca6000000a700000ca7000016a7000032a70000b4210100a6610100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Scrollbar Horizontal
+        m_OriginalName: Scrollbar Horizontal
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -6706
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1108
     y: 73
-    width: 388
+    width: 389
     height: 491
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1068,23 +1068,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 388
+      width: 389
       height: 470
-    m_Scale: {x: 0.20208333, y: 0.20208333}
-    m_Translation: {x: 194, y: 235}
+    m_Scale: {x: 0.20260416, y: 0.20260416}
+    m_Translation: {x: 194.5, y: 235}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -1162.8866
-      width: 1920
-      height: 2325.7732
+      x: -960.00006
+      y: -1159.8972
+      width: 1920.0001
+      height: 2319.7944
     m_MinimalGUI: 1
-  m_defaultScale: 0.20208333
-  m_LastWindowPixelSize: {x: 388, y: 491}
+  m_defaultScale: 0.20260416
+  m_LastWindowPixelSize: {x: 389, y: 491}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
