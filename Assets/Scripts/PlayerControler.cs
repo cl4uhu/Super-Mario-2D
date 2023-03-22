@@ -18,6 +18,7 @@ public class PlayerControler : MonoBehaviour
     float horizontal; 
     CoinManager coinManager;
     BanderaManager banderaManager;
+    GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class PlayerControler : MonoBehaviour
         spriteRenderer= GetComponent<SpriteRenderer>();
         rBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         sensor = GameObject.Find("GroundSensor").GetComponent<GroundSensor>();
         coinManager = GameObject.Find("CoinManager").GetComponent<CoinManager>();
         contMonedas= 0;
@@ -35,7 +37,9 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
+        if(gameManager.isGameOver == false)
+        {
+            horizontal = Input.GetAxis("Horizontal");
 
         //transform.position += new Vector3 (horizontal, 0, 0) * playerSpeed * Time.deltaTime; 
 
@@ -61,6 +65,8 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
+            }
+        
     void FixedUpdate()
     {
         rBody.velocity = new Vector2(horizontal * playerSpeed, rBody.velocity.y);
@@ -79,6 +85,15 @@ public class PlayerControler : MonoBehaviour
         {
             BanderaManager banderaManager = collision.gameObject.GetComponent<BanderaManager>();
             banderaManager.BanderaTocada();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Coin")
+        {
+            gameManager.AddCoin();
+            Destroy(collider.gameObject);
         }
     }
 }
