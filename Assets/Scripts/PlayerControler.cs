@@ -12,13 +12,19 @@ public class PlayerControler : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rBody;
     private GroundSensor sensor; 
+    //variable àra acceder al Animator
     public Animator anim;
     public Text coinText;
     int contMonedas;
+    //variable para almacenar el input de movimiento
     float horizontal; 
     CoinManager coinManager;
     BanderaManager banderaManager;
     GameManager gameManager;
+    //variable para el prefab
+    public GameObject bulletPrefab;
+    //variable para la posición desde donde se dispara el prefab
+    public Transform bulletSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +68,11 @@ public class PlayerControler : MonoBehaviour
         {
             rBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetBool("IsJumping", true);
+        }
+
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         }
     }
 
