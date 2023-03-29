@@ -10,6 +10,8 @@ TagManager:
   - CoinCollision
   - BanderaManager
   - BanderaCollision
+  - Bullet
+  - PowerUp
   layers:
   - Default
   - TransparentFX

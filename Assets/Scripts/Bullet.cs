@@ -24,6 +24,11 @@ public class Bullet : MonoBehaviour
         enemyScript.Die();
       }
 
+      if(collider.gameObject.tag == "Player" || collider.gameObject.tag == "Coin" || collider.gameObject.tag == "Bullet")
+      {
+        return;
+      }
+
       Destroy(this.gameObject);
     }
 }

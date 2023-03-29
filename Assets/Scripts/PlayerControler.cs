@@ -72,7 +72,7 @@ public class PlayerControler : MonoBehaviour
             anim.SetBool("IsJumping", true);
         }
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.F) && gameManager.canShoot)
         {
             Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         }
@@ -106,6 +106,12 @@ public class PlayerControler : MonoBehaviour
         if (collider.gameObject.tag == "Coin")
         {
             gameManager.AddCoin();
+            Destroy(collider.gameObject);
+        }
+
+        if (collider.gameObject.tag == "PowerUp")
+        {
+            gameManager.canShoot = true;
             Destroy(collider.gameObject);
         }
     }
