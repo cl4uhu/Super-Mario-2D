@@ -13,6 +13,17 @@ public class Bullet : MonoBehaviour
     {
        rBody2D = GetComponent<Rigidbody2D>();
 
-       rBody2D.AddForce(Vector2.right * bulletSpeed, ForceMode2D.Impulse);  
+       rBody2D.AddForce(transform.right * bulletSpeed, ForceMode2D.Impulse);  
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+      if(collider.gameObject.layer == 6)
+      {
+        Enemy enemyScript = collider.gameObject.GetComponent<Enemy>();
+        enemyScript.Die();
+      }
+
+      Destroy(this.gameObject);
     }
 }

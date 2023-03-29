@@ -51,12 +51,14 @@ public class PlayerControler : MonoBehaviour
 
         if(horizontal < 0)
         {
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
             anim.SetBool("IsRunning", true);
         }
         else if (horizontal > 0)
         {
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
             anim.SetBool("IsRunning", true);
         }
         else
