@@ -28,9 +28,9 @@ public class SpawnManager : MonoBehaviour
     void SpawnEnemy()
     {
         //Hace spawn de un enemigo en un punto aleatorio
-        /*Transform selectedSpawn = spawnPositions[Random.Range(0, spawnPositions.Length)];
+        Transform selectedSpawn = spawnPositions[Random.Range(0, spawnPositions.Length)];
 
-        Instantiate(enemyPrefab, selectedSpawn.position, selectedSpawn.rotation);*/
+        Instantiate(enemyPrefab, selectedSpawn.position, selectedSpawn.rotation);
 
         /*foreach (Transform spawn in spawnPositions)
         {
@@ -42,12 +42,20 @@ public class SpawnManager : MonoBehaviour
             Instantiate(enemyPrefab, spawnPositions[i].position, spawnPositions[i].rotation);
         }*/
 
+        /*
         int i = 0;
         while (i < spawnPositions.Length)
         {
             Instantiate(enemyPrefab, spawnPositions[i].position, spawnPositions[i].rotation);
             i++;
-        }
+        }*/
+
+        /*int i = 2;
+        do
+        {
+            Instantiate(enemyPrefab, spawnPositions[i].position, spawnPositions[i].rotation);
+            i++;
+        } while (i < spawnPositions.Length);*/
 
         enemyToSpawn--;
     }
