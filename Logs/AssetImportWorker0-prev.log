@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 8129 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'es' Physical Memory: 32559 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Alumne/Documents/GitHub/Super-Mario-2D
+E:/3d/Segundo Trimestre/GitHub/Super-Mario-2D/Super-Mario-2D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50019
-Successfully changed project path to: C:/Users/Alumne/Documents/GitHub/Super-Mario-2D
-C:/Users/Alumne/Documents/GitHub/Super-Mario-2D
+1054
+Successfully changed project path to: E:/3d/Segundo Trimestre/GitHub/Super-Mario-2D/Super-Mario-2D
+E:/3d/Segundo Trimestre/GitHub/Super-Mario-2D/Super-Mario-2D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,59 +47,221 @@ C:/Users/Alumne/Documents/GitHub/Super-Mario-2D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 314.41 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 74.76 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.6f1 (7da38d85baf6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Alumne/Documents/GitHub/Super-Mario-2D/Assets
+[Subsystems] Discovering subsystems at path E:/3d/Segundo Trimestre/GitHub/Super-Mario-2D/Super-Mario-2D/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c81)
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
     Vendor:   NVIDIA
-    VRAM:     1977 MB
+    VRAM:     8050 MB
     Driver:   31.0.15.1694
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.119392 seconds.
+Registered in 0.006890 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 113.75 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 72.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.374 seconds
+- Completed reload, in  0.517 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5375ms)
-		BeginReloadAssembly (4238ms)
+	ReloadAssembly (517ms)
+		BeginReloadAssembly (62ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (4236ms)
+		EndReloadAssembly (366ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (338ms)
+			SetupTypeCache (74ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (348ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (223ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (114ms)
+				RefreshPlugins (72ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 1.177550 seconds.
+Registered in 0.008960 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\3d\Segundo Trimestre\GitHub\Super-Mario-2D\Super-Mario-2D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\3d\Segundo Trimestre\GitHub\Super-Mario-2D\Super-Mario-2D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 69.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.873 seconds
+Domain Reload Profiling:
+	ReloadAssembly (873ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (696ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (166ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (383ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4069 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (55.4 KB). Loaded Objects now: 4525.
+Memory consumption went from 151.2 MB to 151.2 MB.
+Total: 2.764700 ms (FindLiveObjects: 0.265400 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.325100 ms  DeleteObjects: 0.062300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2648.901778 seconds.
+  path: Assets/Prefabs/Goombas_1.prefab
+  artifactKey: Guid(0bede24844c6fbf4db692cbc5210943b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Goombas_1.prefab using Guid(0bede24844c6fbf4db692cbc5210943b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfbfe0244960247e5a0944cd7542d86') in 0.136051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PhysicsMaterials/Mario.physicsMaterial2D
+  artifactKey: Guid(84ee5964d40211245a4a6c0206d4e670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PhysicsMaterials/Mario.physicsMaterial2D using Guid(84ee5964d40211245a4a6c0206d4e670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0658105ba43a744a4edfc05b9b2ae93') in 0.010278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Bullet.prefab
+  artifactKey: Guid(735b80d7bfc153f42b20158136e0caa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bullet.prefab using Guid(735b80d7bfc153f42b20158136e0caa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555b876d6425f3837480cfcf1d36e192') in 0.021382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Fonts/Super Mario Bros. 2.ttf
+  artifactKey: Guid(0f5b3462102b51b4d89625465aa3d2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Super Mario Bros. 2.ttf using Guid(0f5b3462102b51b4d89625465aa3d2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6854072e2f9397b03722b42fbaf2f06') in 0.048415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.217747 seconds.
+  path: Assets/Sprites/Banderas.png
+  artifactKey: Guid(ad8a49304d290aa47a3bb23f6576cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Banderas.png using Guid(ad8a49304d290aa47a3bb23f6576cb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1322e726429546d6b3740b5d1642e560') in 0.057414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Cajas.png
+  artifactKey: Guid(3288157617a790c45892da9920d27418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cajas.png using Guid(3288157617a790c45892da9920d27418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b141bd64deb4ced5dd10ae8137d24a7d') in 0.014471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Mario.png
+  artifactKey: Guid(df93ac383e4a363419dbf23fac1a661c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Mario.png using Guid(df93ac383e4a363419dbf23fac1a661c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4717c60fbd29fc2b9f26348b81ba23cc') in 0.046042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Goombas.png
+  artifactKey: Guid(3f116d30ebdc9ac4883989996481e452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Goombas.png using Guid(3f116d30ebdc9ac4883989996481e452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1e7d2c153bdae3fcc9d24f16ac28df') in 0.017205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Coins1.png
+  artifactKey: Guid(28cc37a0654f33744b9e70670cd90a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Coins1.png using Guid(28cc37a0654f33744b9e70670cd90a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6010cf7d1345fd02d2f8a581c0930d8') in 0.029528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Ladrillos.png
+  artifactKey: Guid(9054cc2e366cc4341a993f5efcbacbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ladrillos.png using Guid(9054cc2e366cc4341a993f5efcbacbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06c0f698ef903ea0d2f8d5677963629') in 0.037723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Super_Mario_Bros._Logo.png
+  artifactKey: Guid(4d2ebc7306e7fa54fbbac5f986dc04ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Super_Mario_Bros._Logo.png using Guid(4d2ebc7306e7fa54fbbac5f986dc04ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280dee6d8b29b2f0c30bebc70810736c') in 0.041748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Montañas.png
+  artifactKey: Guid(03309bbb42ea1ed4eb8a539c2396a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Montañas.png using Guid(03309bbb42ea1ed4eb8a539c2396a3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48c1e938c645e5746c7e2aae3ea7656') in 0.016267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Coins2.png
+  artifactKey: Guid(b430df18c1252a044864f799fc355df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Coins2.png using Guid(b430df18c1252a044864f799fc355df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a5be68f0ca40e626ad650f2731f6ac') in 0.027722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Castillo.png
+  artifactKey: Guid(83026c3a547f54e4eac634bcd11e8f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Castillo.png using Guid(83026c3a547f54e4eac634bcd11e8f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d79b1dc780f45a8f0f533433179182') in 0.013776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Hierbas.png
+  artifactKey: Guid(33d35b32a36bcf141b31914ec28f0a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Hierbas.png using Guid(33d35b32a36bcf141b31914ec28f0a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd346f108637e116dfab6cd17c4adc5d9') in 0.020065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Mapa Escenari del primer nivell del NES Super Mario Bros 1.png
+  artifactKey: Guid(49d1b78ad61ccfc4fae2b0bfb9662329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Mapa Escenari del primer nivell del NES Super Mario Bros 1.png using Guid(49d1b78ad61ccfc4fae2b0bfb9662329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1ecb619690106370763d7430ee315e') in 0.030411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Nuves.png
+  artifactKey: Guid(fc17289983337e14d9d5afc6216ea6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Nuves.png using Guid(fc17289983337e14d9d5afc6216ea6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c9f2d49462e76f3adcef7783c320243') in 0.016359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Tuberias.png
+  artifactKey: Guid(04290b4e2c87cdd48b028982646dd7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Tuberias.png using Guid(04290b4e2c87cdd48b028982646dd7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669823c59be8ccfedf8edc3c8c8103bd') in 0.021628 seconds 
